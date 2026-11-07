@@ -1,0 +1,254 @@
+/* Colors mirror AppTheme.swift in the app. */
+:root {
+    --background: #EEF8EE;
+    --card: #E0F2E0;
+    --primary-text: #265950;
+    --secondary-text: #4D8073;
+    --accent: #40A673;
+    --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--primary-text);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Plant images are pixel art; keep edges crisp when scaled. */
+img.pixel {
+    image-rendering: pixelated;
+}
+
+a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--primary-text);
+}
+
+/* Navigation */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+.site-nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-text);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav .brand img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav ul a {
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+.site-nav ul a:hover,
+.site-nav ul a[aria-current="page"] {
+    color: var(--accent);
+}
+
+/* Layout */
+
+main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0.4em 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 2em;
+}
+
+.muted {
+    color: var(--secondary-text);
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 32px 0 8px;
+}
+
+.hero .app-icon {
+    width: 128px;
+    height: 128px;
+    border-radius: 28px;
+    box-shadow: 0 6px 20px rgba(38, 89, 80, 0.2);
+}
+
+.hero .tagline {
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+    max-width: 560px;
+    margin: 0 auto 24px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--primary-text);
+    color: #FFFFFF;
+}
+
+/* Row of plant sprites used as decoration */
+
+.plant-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.plant-row img {
+    width: 64px;
+    height: 64px;
+}
+
+.plant-row img:nth-child(odd) {
+    transform: translateY(-6px);
+}
+
+/* Feature grid */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.feature {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.feature img {
+    width: 48px;
+    height: 48px;
+}
+
+.feature h3 {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+.feature p {
+    margin: 0;
+    color: var(--secondary-text);
+}
+
+/* Page header with a single plant beside the title */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.page-header img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Citations */
+
+sup a {
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+.references {
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+    padding-left: 1.5em;
+}
+
+.references li {
+    margin-bottom: 8px;
+}
+
+/* Keeps long DOIs from overflowing on narrow screens. */
+.references a {
+    overflow-wrap: anywhere;
+    font-weight: normal;
+}
+
+/* Footer */
+
+footer {
+    border-top: 2px dashed var(--card);
+    text-align: center;
+    padding: 24px;
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+}
+
+footer a {
+    font-weight: normal;
+}
+
+.footer-disclaimer {
+    max-width: 600px;
+    margin: 0 auto 12px;
+}
