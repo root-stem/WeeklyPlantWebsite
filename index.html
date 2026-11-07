@@ -1,3 +1,98 @@
-  <!doctype html>
-  <html><head><meta charset="utf-8"><title>WeeklyPlant</title></head>
-  <body><h1>WeeklyPlant</h1><p>Coming soon to the App Store.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly Plant — Eat 30 plants a week</title>
+    <meta name="description" content="Weekly Plant helps you track how many different plants you eat each week, with a simple visual catalog and a weekly goal.">
+    <link rel="icon" href="images/app-icon.png">
+    <link rel="apple-touch-icon" href="images/app-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a class="brand" href="index.html"><img src="images/app-icon.png" alt="">Weekly Plant</a>
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img class="app-icon pixel" src="images/app-icon.png" alt="Weekly Plant app icon">
+            <h1>Weekly Plant</h1>
+            <p class="tagline">Eating a wide variety of plants is linked to a more diverse gut microbiome. Weekly Plant makes it easy to count how many different plants you eat each week and work toward 30.</p>
+            <!-- Replace href with the App Store link once the app is live. -->
+            <a class="button" href="#">Coming soon to the App Store</a>
+        </section>
+
+        <div class="plant-row" aria-hidden="true">
+            <img class="pixel" src="images/carrot.png" alt="">
+            <img class="pixel" src="images/blueberry.png" alt="">
+            <img class="pixel" src="images/avocado.png" alt="">
+            <img class="pixel" src="images/mushroom.png" alt="">
+            <img class="pixel" src="images/lemon.png" alt="">
+            <img class="pixel" src="images/kale.png" alt="">
+        </div>
+
+        <section class="features">
+            <div class="feature">
+                <img class="pixel" src="images/carrot.png" alt="">
+                <h3>Log in a tap</h3>
+                <p>Browse a hand-drawn catalog of fruits, vegetables, legumes, grains, nuts, seeds and fungi, and tap a plant to log it.</p>
+            </div>
+            <div class="feature">
+                <img class="pixel" src="images/blueberry.png" alt="">
+                <h3>Weekly goal</h3>
+                <p>Watch your progress ring fill as you go, with a small celebration when you hit your goal. The goal is 30 by default and you can change it.</p>
+            </div>
+            <div class="feature">
+                <img class="pixel" src="images/lemon.png" alt="">
+                <h3>Smart search</h3>
+                <p>Finds plants even with typos and regional names like courgette or aubergine. Type a dish like ratatouille to see the plants in it.</p>
+            </div>
+            <div class="feature">
+                <img class="pixel" src="images/mushroom.png" alt="">
+                <h3>Plant Cloud</h3>
+                <p>See every plant you've logged, sized by how often you eat it, along with stats on your best and average weeks.</p>
+            </div>
+            <div class="feature">
+                <img class="pixel" src="images/avocado.png" alt="">
+                <h3>Your week, your way</h3>
+                <p>Choose which day your week starts on and the timezone you track in, so your weeks stay put when you travel.</p>
+            </div>
+            <div class="feature">
+                <img class="pixel" src="images/kale.png" alt="">
+                <h3>Private by design</h3>
+                <p>Everything stays on your device. No accounts, no tracking and no ads.</p>
+            </div>
+        </section>
+
+        <section id="science">
+            <h2>The science behind 30</h2>
+            <p>The 30-plant target comes from the American Gut Project, a large citizen-science study of the gut microbiome. Participants who ate more than 30 different plant types a week had more diverse gut bacteria than those who ate 10 or fewer. This held whether they called themselves vegan, vegetarian or omnivore.<sup><a href="#ref-1">1</a></sup></p>
+            <p>That study was observational, so it shows a link rather than proof of cause and effect. More recently, a randomized crossover trial in adults with chronic kidney disease compared a diet of 30 or more plant foods a week with one of 15 or fewer. The higher-diversity diet shifted the gut microbiome and lowered participants' symptom burden.<sup><a href="#ref-2">2</a></sup></p>
+            <p>Thirty isn't a magic number. It's a practical goal for eating a wider variety of plants.</p>
+
+            <ol class="references">
+                <li id="ref-1">McDonald D, Hyde E, Debelius JW, et al. American Gut: an Open Platform for Citizen Science Microbiome Research. <em>mSystems</em>. 2018;3(3):e00031-18. <a href="https://doi.org/10.1128/mSystems.00031-18">doi:10.1128/mSystems.00031-18</a></li>
+                <li id="ref-2">Stanford J, Stefoska-Needham A, Jiang X, et al. High-Diversity Plant-Based Diet and Gut Microbiome, Plasma Metabolome, and Symptoms in Adults with CKD. <em>Clin J Am Soc Nephrol</em>. 2025;20(5):619-631. <a href="https://doi.org/10.2215/CJN.0000000682">doi:10.2215/CJN.0000000682</a></li>
+            </ol>
+        </section>
+
+        <section id="disclaimer" class="card">
+            <h2 style="margin-top: 0">Disclaimer</h2>
+            <p>Weekly Plant is offered for informational and entertainment purposes only. It is not medical or nutritional advice and is not intended to diagnose, treat, cure or prevent any disease or health condition.</p>
+            <p style="margin-bottom: 0">Always consult your doctor, a registered dietitian or another qualified healthcare provider before changing your diet, especially if you are pregnant or breastfeeding, have a medical condition, food allergies or intolerances, or take medication. Never disregard professional medical advice or delay seeking it because of something you read in the app or on this website.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-disclaimer">Weekly Plant is for informational and entertainment purposes only and is not medical or nutritional advice. <a href="index.html#disclaimer">Read the full disclaimer.</a></p>
+        <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+        <p>© 2026 Root &amp; Stem LLC</p>
+    </footer>
+</body>
+</html>
